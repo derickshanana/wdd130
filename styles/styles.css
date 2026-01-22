@@ -1,6 +1,35 @@
+/* Navigation bar styling */
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+/* Navigation links styling */
+nav a {
+    color: white;
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    /* optional, makes links cleaner */
+}
+
 /* Main content width */
 main {
     max-width: 840px;
+}
+
+/* Heading styling */
+h1 {
+    color: steelblue;
+}
+
+/* Profile image inside main */
+main img {
+    width: 150px;
+    height: auto;
+    border: 2px solid steelblue;
+    padding: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Aside styling */
@@ -17,12 +46,6 @@ aside {
 /* Aside image styling */
 aside img {
     width: 200px;
-    height: auto;
-}
-
-/* Profile image override */
-main img {
-    width: 150px;
     height: auto;
 }
 
