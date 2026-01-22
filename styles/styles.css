@@ -1,0 +1,39 @@
+/* Main content width */
+main {
+    max-width: 840px;
+}
+
+/* Aside styling */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+/* Aside image styling */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Profile image override */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Paragraph padding reset */
+p {
+    padding: 0;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
