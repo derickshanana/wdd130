@@ -1,5 +1,5 @@
 /* ===================== */
-/* CSS VARIABLES */
+/* CSS VARIABLES (REQUIRED) */
 /* ===================== */
 :root {
     --primary-color: #1b4965;
@@ -11,7 +11,7 @@
 }
 
 /* ===================== */
-/* RESET */
+/* UNIVERSAL RESET (REQUIRED) */
 /* ===================== */
 * {
     margin: 0;
@@ -20,11 +20,11 @@
 }
 
 /* ===================== */
-/* PAGE LAYOUT */
+/* PAGE BASE */
 /* ===================== */
 body {
     font-family: var(--body-font);
-    color: #333;
+    color: #222;
 }
 
 header,
@@ -58,12 +58,8 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    background-color: var(--secondary-color);
-}
-
 /* ===================== */
-/* SPACING FOR CONTENT */
+/* CONTENT SPACING */
 /* ===================== */
 nav,
 p,
@@ -74,19 +70,20 @@ article {
 }
 
 /* ===================== */
-/* HERO SECTION */
+/* HERO CONTAINER (REQUIRED) */
 /* ===================== */
 .hero {
     position: relative;
 }
 
+/* HERO BACKGROUND IMAGE */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* HERO TITLE OVERLAY */
+/* HERO HEADING OVERLAY (REQUIRED) */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -98,28 +95,28 @@ article {
     color: #fff;
 }
 
-/* HERO TEXT BOX */
+/* HERO ARTICLE OVERLAY (REQUIRED) */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 40px;
     right: 40px;
     background-color: rgba(0, 0, 0, 0.65);
-    color: white;
+    color: #fff;
     padding: 16px;
 }
 
-/* SMALL IMAGE IN HERO TEXT */
+/* IMAGE INSIDE HERO ARTICLE (REQUIRED) */
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 15px;
-    border: 2px solid #fff;
+    border: 2px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* ===================== */
-/* SECTIONS */
+/* SECTION TITLES */
 /* ===================== */
 section h2 {
     background-color: var(--primary-color);
@@ -138,6 +135,7 @@ footer {
     padding: 10px;
 }
 
+/* REMOVE UNDERLINES FROM SOCIAL ICON LINKS (REQUIRED) */
 .socialmedia a {
     text-decoration: none;
 }
