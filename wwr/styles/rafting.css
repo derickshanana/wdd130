@@ -3,6 +3,12 @@
     --secondary-color: #5fa8d3;
     --accent1-color: #0d3b66;
     --accent2-color: #f4d35e;
+
+    --light-color: #ffffff;
+    --dark-color: #222222;
+    --overlay-dark: rgba(0, 0, 0, 0.6);
+    --overlay-light: rgba(255, 255, 255, 0.85);
+
     --heading-font: 'Trebuchet MS', sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -19,25 +25,24 @@
 body {
     font-family: var(--body-font);
     line-height: 1.6;
-    color: #222;
+    color: var(--dark-color);
 }
 
-/* ---------------- HEADER (GRID) ---------------- */
+/* ---------------- HEADER ---------------- */
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
     background-color: var(--primary-color);
     padding: 1rem;
-    color: white;
-    /* 🔥 FIXES CONTRAST ERROR */
+    color: var(--light-color);
 }
 
 .logo {
     width: 150px;
 }
 
-/* NAV (FLEX) */
+/* NAV */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -45,7 +50,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--light-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -69,19 +74,19 @@ nav a:hover {
 .hero h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
-    padding: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: var(--heading-font);
-    /* 🔥 USES VARIABLE */
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: var(--light-color);
+    background: var(--overlay-dark);
+    padding: 0.5rem 1rem;
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--overlay-light);
     padding: 1rem;
     max-width: 300px;
 }
@@ -94,49 +99,52 @@ nav a:hover {
 }
 
 /* ---------------- HISTORY ---------------- */
-section:first-of-type {
+.history {
     padding: 2rem;
     text-align: center;
 }
 
-section:first-of-type h2 {
+.history h2 {
     font-family: var(--heading-font);
-    /* 🔥 USES VARIABLE */
     margin-bottom: 1rem;
 }
 
-section:first-of-type img {
-    width: 200px;
-    margin: 1rem auto;
-    display: block;
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
     border-radius: 10px;
 }
 
 /* ---------------- ADVENTURES ---------------- */
-section:last-of-type {
+.adventures {
     padding: 2rem;
     background-color: var(--secondary-color);
     text-align: center;
 }
 
-section:last-of-type h2 {
+.adventures h2 {
     font-family: var(--heading-font);
-    /* 🔥 USES VARIABLE */
     margin-bottom: 1rem;
 }
 
-section:last-of-type {
+.adventure-gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
-section:last-of-type figure {
-    width: 180px;
+.adventure-gallery figure {
+    flex: 1;
 }
 
-section:last-of-type img {
+.adventure-gallery img {
     width: 100%;
     border-radius: 10px;
 }
@@ -152,7 +160,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--light-color);
     padding: 1rem;
 }
 
