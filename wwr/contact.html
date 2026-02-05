@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | White Water Rafting Adventures</title>
     <meta name="description"
       content="Contact White Water Rafting Adventures for reservations, questions, or feedback. Find our address, phone numbers, email, and send us a message.">
+    <meta name="author" content="Derick Shanana">
+    <title>Contact Us | White Water Rafting Adventures</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -24,84 +25,94 @@
 
     <main class="contact-page">
 
-        <h1>Contact Us</h1>
+        <h1>Contact White Water Rafting Adventures</h1>
 
-        <!-- COMPANY INFO -->
+        <!-- Company Info -->
         <section class="company-info">
-            <h2>Company Information</h2>
-            <p><strong>Address:</strong> 123 River Rapids Road, Adventure Valley, UT 84000</p>
-            <p><strong>Phone:</strong> +1 (800) 555-RAFT</p>
-            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+            <h2>Our Office</h2>
+            <p><strong>Address:</strong> 123 River Canyon Road, Rapids City, UT 84000</p>
+            <p><strong>Phone:</strong> +1 (801) 555-RAFT</p>
+            <p><strong>Email:</strong> info@whitewateradventures.com</p>
 
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086390!2d-122.4194!3d37.7749"
-              loading="lazy">
+            <iframe src="https://www.google.com/maps?q=Grand+Canyon+West+Rim&output=embed"
+              width="100%" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-        </section>
 
-        <!-- EMPLOYEES -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
-            <div class="employee-gallery">
-                <figure>
-                    <img src="images/guide1.jpg" alt="Sarah Johnson, River Guide">
-                    <figcaption>Sarah Johnson – Senior River Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/guide2.jpg" alt="Michael Torres, Safety Instructor">
-                    <figcaption>Michael Torres – Safety Instructor</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/guide3.jpg" alt="Emily Chen, Trip Coordinator">
-                    <figcaption>Emily Chen – Trip Coordinator</figcaption>
-                </figure>
-            </div>
-        </section>
 
-        <!-- CONTACT FORM -->
-        <section class="contact-form-section">
-            <h2>Send Us a Message</h2>
+            <!-- Employees -->
+            <section class="employees">
+                <h2>Meet Our Team</h2>
+                <div class="employee-gallery">
+                    <figure>
+                        <img src="images/guide1.jpg" alt="Sarah Johnson, River Guide">
+                        <figcaption>Sarah Johnson — River Guide</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/guide2.jpg" alt="Michael Torres, Safety Instructor">
+                        <figcaption>Michael Torres — Safety Instructor</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/guide3.jpg" alt="Emily Chen, Trip Coordinator">
+                        <figcaption>Emily Chen — Trip Coordinator</figcaption>
+                    </figure>
+                </div>
+            </section>
 
-            <form action="#" method="post" class="contact-form">
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h2>Send Us a Message</h2>
 
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+                <form class="contact-form" method="post" action="#">
 
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
 
-                <fieldset>
-                    <legend>Purpose of Your Message</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General
-                        Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation
-                        Question</label>
-                    <label><input type="radio" name="purpose" value="website"> Website
-                        Suggestion</label>
-                </fieldset>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                    <fieldset>
+                        <legend>Purpose of Message</legend>
 
-                <label class="checkbox">
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general"
+                              required>
+                            General Inquiry
+                        </label>
 
-                <button type="submit" class="submit-btn">Send My Message</button>
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
 
-            </form>
-        </section>
+                        <label for="suggestion">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <label for="subscribe" class="checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit" class="submit-btn">Send My Message</button>
+
+                </form>
+            </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 White Water Rafting Adventures</p>
-        <div class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/linkedin.png" alt="Twitter"></a>
-        </div>
+        <p>© 2026 White Water Rafting Adventures | Derick Shanana</p>
+
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt="Facebook icon"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram icon"></a>
+            <a href="#"><img src="images/linkedin.png" alt="Twitter icon"></a>
+        </nav>
     </footer>
 
 </body>
